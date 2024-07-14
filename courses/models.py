@@ -4,7 +4,7 @@ from django.db import models
 class Courses (models.Model):
     course_name = models.CharField(max_length=20)
     trainer = models.CharField(max_length=20)
-    duration=models.DurationFieldField()
+    duration=models.DurationField()
     number_of_assessments= models.IntegerField()
     syllabus= models.TextField()
     number_of_assignment= models.IntegerField()

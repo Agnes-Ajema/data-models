@@ -2,14 +2,14 @@ from django.db import models
 
 # Create your models here.
 
-class Teachers (models.Model):
+class Teachers(models.Model):
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     gender=models.CharField(max_length=20)
     Date_of_Birth= models.IntegerField()
     email= models.EmailField()
-    Account_Number= models.PositiveLargeIntegerField()
-    national_id= models.PositiveLargeIntegerField()
+    Account_Number= models.PositiveBigIntegerField()
+    national_id= models.PositiveBigIntegerField()
     phone_number= models.IntegerField()
     teaching_hours=models.DurationField()
 

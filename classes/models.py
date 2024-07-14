@@ -8,8 +8,11 @@ class Class (models.Model):
     class_motto= models.TextField()
     class_groups= models.TextField()
     no_of_tables = models.IntegerField()
-   no_of_chairs= models.IntegerField()
+    no_of_chairs= models.IntegerField()
     class_lessons= models.TextField()
-    class_student_representative= models.CharField()
+    class_student_representative= models.CharField(max_length=20)
     class_size=models.CharField(max_length=20)
   
+
+def __str__(self):
+    return f"{self.class_name} {self.class_capacity}"

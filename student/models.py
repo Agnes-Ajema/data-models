@@ -8,7 +8,7 @@ class Student(models.Model):
     student_nationality=models.CharField(max_length=20)
     date_of_birth=models.DateField()
     student_code = models.IntegerField()
-     student_Guardian=models.CharField(max_length=40)
+    student_Guardian=models.CharField(max_length=40)
     student_locker_number=models.IntegerField()
     student_class = models.CharField(max_length=20)
     student_mentor=models.CharField(max_length=40)
