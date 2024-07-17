@@ -7,3 +7,7 @@ class ClassPeriod(models.Model):
     course = models.CharField(max_length=50)
     classroom = models.CharField(max_length=50)
     day_of_the_week = models.CharField(max_length=50)
+
+
+def __str__(self):
+    return f"{self.start_time} {self.end_time}"
