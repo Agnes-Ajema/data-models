@@ -1,18 +1,15 @@
 from django.db import models
+import datetime
 
-# Create your models here.
 class Student(models.Model):
     student_name=models.CharField(max_length=40)
     Student_bio=models.TextField()
     student_email=models.EmailField()
     student_nationality=models.CharField(max_length=20)
-    date_of_birth=models.DateField()
-    student_code = models.IntegerField()
+    date_of_birth=models.DateTimeField(datetime.date, blank = True)
     student_Guardian=models.CharField(max_length=40)
-    student_locker_number=models.IntegerField()
     student_class = models.CharField(max_length=20)
     student_mentor=models.CharField(max_length=40)
 
-    def __str__(self):
-       return f"{self.first_name}{self.last_name}"
+
 
